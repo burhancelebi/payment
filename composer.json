@@ -1,0 +1,33 @@
+{
+    "name": "virtual/payment",
+    "description": "Virtual payment package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Burhan Çelebi",
+            "email": "burhan.celebi.2112@gmail.com"
+        }
+    ],
+
+    "require": {
+        "iyzico/iyzipay-php": "^2.0",
+        "paypal/rest-api-sdk-php": "*"
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Virtual\\Payment\\PaymentServiceProvider"
+            ]
+        }
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Virtual\\Payment\\": "src/Payment"
+        }
+    },
+
+    "minimum-stability": "dev"
+}
